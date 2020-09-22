@@ -3,19 +3,17 @@ package com.snemmani.dsalgo.ds.arrays;
 import com.snemmani.dsalgo.ds.arrays.rotation.ArrayRotationMethod;
 import com.snemmani.dsalgo.ds.arrays.rotation.ArrayRotator;
 import com.snemmani.dsalgo.ds.arrays.rotation.ArrayRotatorFactory;
-import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ArrayRotatorTest {
-    private int rotateByCount = 3;
+    private final int rotateByCount = 3;
     private int[] array = null;
-    private int[] assertionData = generateAssertionData();
+    private final int[] assertionData = generateAssertionData();
 
     private int[] generateTestData() {
         return new int[]{1, 2, 3, 4, 5, 6, 7, 8};
@@ -45,6 +43,14 @@ public class ArrayRotatorTest {
     public void testJugglingRotator() {
         this.array = generateTestData();
         ArrayRotator rotator = ArrayRotatorFactory.getRotator(ArrayRotationMethod.JUGGLING);
+        rotator.leftRotate(this.array, rotateByCount, this.array.length);
+        assertArrayEquals(this.array, assertionData);
+    }
+
+    @Test
+    public void testReversalRotator() {
+        this.array = generateTestData();
+        ArrayRotator rotator = ArrayRotatorFactory.getRotator(ArrayRotationMethod.REVERSAL);
         rotator.leftRotate(this.array, rotateByCount, this.array.length);
         assertArrayEquals(this.array, assertionData);
     }
