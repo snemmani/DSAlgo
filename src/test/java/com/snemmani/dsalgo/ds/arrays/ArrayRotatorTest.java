@@ -1,5 +1,8 @@
 package com.snemmani.dsalgo.ds.arrays;
 
+import com.snemmani.dsalgo.ds.arrays.rotation.ArrayRotationMethod;
+import com.snemmani.dsalgo.ds.arrays.rotation.ArrayRotator;
+import com.snemmani.dsalgo.ds.arrays.rotation.ArrayRotatorFactory;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
