@@ -42,10 +42,6 @@ dependencies {
 	testImplementation('org.junit.jupiter:junit-jupiter:5.5.2')
 }
 
-application {
-	// Define the main class for the application.
-	mainClassName = 'design.patterns.java.App'
-}
 
 test {
 	finalizedBy jacocoTestReport
