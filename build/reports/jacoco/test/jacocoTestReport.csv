@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+dsalgo,com.snemmani.dsalgo.ds.arrays,ArrayRotatorUsingTempArray,0,55,1,7,0,10,1,5,0,2
+dsalgo,com.snemmani.dsalgo.ds.arrays,ArrayRotationMethod,0,34,0,0,0,4,0,1,0,1
+dsalgo,com.snemmani.dsalgo.ds.arrays,OneAtATimeRotator,0,41,0,4,0,9,0,5,0,3
+dsalgo,com.snemmani.dsalgo.ds.arrays,JugglingRotator,0,65,0,8,0,18,0,7,0,3
+dsalgo,com.snemmani.dsalgo.ds.arrays,ArrayRotatorFactory,5,17,1,3,2,4,2,3,1,1
+dsalgo,com.snemmani.dsalgo.ds.arrays,ArrayRotator,0,25,0,2,0,5,0,3,0,2

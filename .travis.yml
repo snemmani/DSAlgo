@@ -1,0 +1,16 @@
+language: java
+jdk: oraclejdk11
+dist: trusty
+stages:
+  - test
+jobs:
+  include:
+    - stage: test
+      script:
+        - ./gradlew build jacocoTestReport sonarqube
+#        - ./gradlew sonarqube
+addons:
+  sonarcloud:
+    organization: snemmani
+#    token:
+#      secure: "hx9ma7DiW509B+qsQpUrrTf5DG0Te59dOU1joF6M/7CKAAQa4Spy99G2Hn8TChPSd51l3Vb57511A9unb63SZrLypABxymjfUOKtbjiK8O6mWmhAG/9O+IJS2egarweoiQJe0t4FAVQuCuGNvR9hr1dOMFladY7N2+QGvWM9WoQU/dow4SM5Mnvqu4OjO3XnZnkzT7o4tOXKlpJRfzzyKmPDi5VQJ4E6sDqz8/IA9zNgrJ+VA4+7gPSJKkA4M0o5snIi4iV4xRgCbFU3exGhlWmVZo1pG0d1qztvP9Mro0GXvyVjgY+EE2q5UVXvyz+fBNi//amkVK1TeSg8+HMkYrMIU7/eFzzPYW6wLFVRJDyxAdfzpQ52IR2vOATvujO4R5znpsVFxudHQPDim7OmXbMklhivzgE4wG3xbOYcUGJfFZwvdmGI+tu70MkhAGrnU344xyF548zmzUMG8/PoXr40AMktTIi1n22PbcAqaPq4TmXaNIgEZchRmQh1iATpKGTVedmgrnD7PiMTQEa1st5L7pyFem0iWLEf3L29DPmHLzis2IMJeZ3VyKR5vZK7f44xvjA0Jg0Vj8mIlyIMSA54gbBSVUHYwXreuOMDLacjiLipvPj4sHDAjY9cWaqzEys5A6oQWBkCNqP9M5nGka7YVguMYbgQM3x/a+PfMh0="

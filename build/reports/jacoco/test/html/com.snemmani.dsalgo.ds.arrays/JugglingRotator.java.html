@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>JugglingRotator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">dsalgo</a> &gt; <a href="index.source.html" class="el_package">com.snemmani.dsalgo.ds.arrays</a> &gt; <span class="el_source">JugglingRotator.java</span></div><h1>JugglingRotator.java</h1><pre class="source lang-java linenums">package com.snemmani.dsalgo.ds.arrays;
+
+<span class="fc" id="L3">public class JugglingRotator extends ArrayRotator {</span>
+    @Override
+    public void leftRotate(int[] array, int d, int n) {
+        /* To handle if d &gt;= n */
+<span class="fc" id="L7">        d = d % n;</span>
+        int i, j, k, temp;
+<span class="fc" id="L9">        int g_c_d = gcd(d, n);</span>
+<span class="fc bfc" id="L10" title="All 2 branches covered.">        for (i=0; i&lt;g_c_d; i++) {</span>
+<span class="fc" id="L11">            temp = array[i];</span>
+<span class="fc" id="L12">            j = i;</span>
+            while ( true ) {
+<span class="fc" id="L14">                k = j + d;</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">                if ( k &gt;= n )</span>
+<span class="fc" id="L16">                    k = k - n;</span>
+<span class="fc bfc" id="L17" title="All 2 branches covered.">                if ( k == i )</span>
+<span class="fc" id="L18">                    break;</span>
+<span class="fc" id="L19">                array[j] = array[k];</span>
+<span class="fc" id="L20">                j = k;</span>
+            }
+<span class="fc" id="L22">            array[j] = temp;</span>
+        }
+<span class="fc" id="L24">    }</span>
+
+
+
+    private int gcd(int a, int b) {
+<span class="fc bfc" id="L29" title="All 2 branches covered.">        if (b == 0)</span>
+<span class="fc" id="L30">            return a;</span>
+        else
+<span class="fc" id="L32">            return gcd(b, a % b);</span>
+
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
