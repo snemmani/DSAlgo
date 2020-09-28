@@ -1,6 +1,6 @@
 package com.snemmani.dsalgo.ds.arrays.rotation;
 
-public class ReversalArrayRotator extends ArrayRotator {
+public class ReversalArrayRotator implements ArrayRotator {
     @Override
     public void leftRotate(int[] array, int d, int n) {
         reverse(array, 0, d-1);

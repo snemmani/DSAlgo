@@ -1,13 +1,16 @@
 package com.snemmani.dsalgo.ds.arrays.rotation;
 
-public class JugglingRotator extends ArrayRotator {
+public class JugglingRotator implements ArrayRotator {
     @Override
     public void leftRotate(int[] array, int d, int n) {
         /* To handle if d >= n */
         d = d % n;
-        int i, j, k, temp;
-        int g_c_d = gcd(d, n);
-        for (i=0; i<g_c_d; i++) {
+        int i;
+        int j;
+        int k;
+        int temp;
+        int gcdVar = gcd(d, n);
+        for (i=0; i<gcdVar; i++) {
             temp = array[i];
             j = i;
             while ( true ) {

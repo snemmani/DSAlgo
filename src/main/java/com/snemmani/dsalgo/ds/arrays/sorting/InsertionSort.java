@@ -1,8 +1,11 @@
 package com.snemmani.dsalgo.ds.arrays.sorting;
 
-public class InsertionSort {
+public class InsertionSort  implements ArraySort {
+    @Override
     public void sort(int[] array) {
-        int i, j, compareValue;
+        int i;
+        int j;
+        int compareValue;
         for (i=1; i<array.length; i++) {
             j = i-1;
             compareValue = array[i];

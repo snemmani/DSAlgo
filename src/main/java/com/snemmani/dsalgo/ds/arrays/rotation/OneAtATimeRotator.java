@@ -1,6 +1,6 @@
 package com.snemmani.dsalgo.ds.arrays.rotation;
 
-public class OneAtATimeRotator extends ArrayRotator {
+public class OneAtATimeRotator implements ArrayRotator {
     @Override
     public void leftRotate(int[] array, int d, int n) {
         for (int i=0; i<d; i++) {

@@ -13,6 +13,7 @@ A: {1 2 3 4 5}
 ## Implementation
 This package implements sorting of Arrays through following algorithms
   * Insertion Sort
+  * Merge Sort
   
 ### [Insertion Sort](./InsertionSort.java)
 This aims to sort the array by comparing every value with the values on its left,
@@ -22,4 +23,10 @@ The Best case Running time is 0(n) when the array is already sorted
 The Worst case Running time is 0(n^2) when the array is sorted in descending order
 Average running time is 0(n^2)
 
-Preferred over Merge sort for smaller values of Inputs 
+Preferred over Merge sort for smaller values of Inputs
+
+### [Merge Sort](./MergeSort.java) 
+This aims to sort the array by dividing the array into 2 equal sub parts on every recursion
+so that the continuity of having the sorted sub array is maintained.
+
+The running time of Merge sort is 0(nLOGn)

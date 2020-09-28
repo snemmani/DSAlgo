@@ -16,4 +16,5 @@ The Datastructures and Algorithms are implemented in the following order
       * [Rotate using Reversal Algorithm](./src/main/java/com/snemmani/dsalgo/ds/arrays/rotation/ReversalArrayRotator.java)
     * [Array Sorting](./src/main/java/com/snemmani/dsalgo/ds/arrays/sorting)
       * [Insertion Sort](./src/main/java/com/snemmani/dsalgo/ds/arrays/sorting/InsertionSort.java)
+      * [Merge Sort](./src/main/java/com/snemmani/dsalgo/ds/arrays/sorting/MergeSort.java)
         
