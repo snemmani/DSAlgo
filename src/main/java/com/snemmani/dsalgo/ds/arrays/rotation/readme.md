@@ -16,26 +16,26 @@ This package implements rotation of Arrays through the following algorithms
   * Rotate using a temporary array
   * Rotate using Juggling algorithm
   
-## [Rotate one at a time](OneAtATimeRotator.java)
+### [Rotate one at a time](OneAtATimeRotator.java)
  This aims to rotate the array by one position for a total of d number of times.
  The Time Complexity for this Algorithm is: O(n*d)
 
 Time Complexity: O(n*d)
 
-## [Rotate using a temp array](ArrayRotatorUsingTempArray.java)
+### [Rotate using a temp array](ArrayRotatorUsingTempArray.java)
 Create a temporary array of size d and transfer the initial elements of array A into
 temp, then move the elements of array by d lengths and then insert temp at the end of Array A
 
 Time Complexity: O(n)
 Axiliary Space: O(d)
 
-## [Rotate using Juggling algorithm](JugglingRotator.java)
+### [Rotate using Juggling algorithm](JugglingRotator.java)
 We split the array into g number og parts where g is the GCD of N and d.
 We rotate the sets once to arrive at desired solution.
 
 Time Complexity: O(n)
 
-## [Rotate using Reversal Algorithm](ReversalArrayRotator.java)
+### [Rotate using Reversal Algorithm](ReversalArrayRotator.java)
 We Split the array into two sub-parts, from start Index to d, and d to end Index.
 Reverse both parts separately and reverse the entire array.
 It will reverse the array by d times. 
