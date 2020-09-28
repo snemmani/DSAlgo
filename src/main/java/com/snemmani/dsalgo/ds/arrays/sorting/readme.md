@@ -1,4 +1,4 @@
-# Array Rotation
+# Array Sorting
 Inspiration: CLRS, Introduction to Algorithms
 
 ## Problem Statement
