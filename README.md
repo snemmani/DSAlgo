@@ -17,4 +17,6 @@ The Datastructures and Algorithms are implemented in the following order
     * [Array Sorting](./src/main/java/com/snemmani/dsalgo/ds/arrays/sorting)
       * [Insertion Sort](./src/main/java/com/snemmani/dsalgo/ds/arrays/sorting/InsertionSort.java)
       * [Merge Sort](./src/main/java/com/snemmani/dsalgo/ds/arrays/sorting/MergeSort.java)
-        
+  * [Trees](./src/main/java/com/snemmani/dsalgo/ds/trees)
+    * [Binary Tree](./src/main/java/com/snemmani/dsalgo/ds/trees/BinaryTree.java)
+    * [AVL Tree](./src/main/java/com/snemmani/dsalgo/ds/trees/AVLTree.java)
