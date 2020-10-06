@@ -3,12 +3,24 @@ Tree represents the nodes connected by edges.
 
 **Inspiration [Tutorials Point: Trees](https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm)** 
 
-## Binary Tree or Binary Search Tree
+## Binary Search Tree
 Binary Tree is a special datastructure used for data storage purposes. A binary tree has a special condition that each node can have a maximum of two children. A binary tree has the benefits of both an ordered array and a linked list as search is as quick as in a sorted array and insertion or deletion operation are as fast as in linked list.
 ![img](https://www.tutorialspoint.com/data_structures_algorithms/images/binary_tree.jpg)
 
 ### Implementation
 Binary Tree is implemented [here](./BinaryTree.java)
+
+### Operations
+#### Insertion
+Insertion operation inserts a new node checking the value of the parent node. The insertion operation takes 
+O(n) time.
+
+#### Search
+Searching a binary tree has worst case Complexity of O(n). 
+Average complexity is O(h) where h is the height of the tree.
+
+##### Traversal
+Traversal of a binary tree takes O(n) time
 
 ### Disadvantages
 What if the input to binary search tree comes in a sorted (ascending or descending) manner? It will then look like this −
@@ -45,3 +57,14 @@ If a tree becomes unbalanced, when a node is inserted into the right subtree of 
 
 #### Right Left Rotation
 If a tree becomes unbalanced, when a node is inserted into the left subtree of the right subtree, then we perform a right left rotation.
+
+### Operations
+#### Insertion
+Insertion operation inserts a new node checking the value of the parent node. The insertion operation takes 
+O(ln n) time.
+
+#### Search 
+Time complexity is O(ln n) where h is the height of the tree.
+
+##### Traversal
+Traversal of a binary tree takes O(n) time
